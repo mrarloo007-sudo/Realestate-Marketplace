@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f3f7fb;
+  color: #1f2937;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.site-header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Navigation */
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-icon {
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-weight: 700;
+  color: #1e90ff;
+  font-size: 20px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.main-nav a {
+  color: #334155;
+  text-decoration: none;
+  padding: 8px 6px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.main-nav a:hover {
+  background: rgba(30, 144, 255, 0.12);
+}
+
+.auth-area .btn {
+  padding: 8px 16px;
+  border-radius: 9999px;
+  border: 1px solid #1e90ff;
+  background: #1e90ff;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* MAIN page */
+.hero {
+  background: linear-gradient(180deg, rgba(14, 165, 233, 0.12), transparent 55%), #eff6ff;
+  padding: 80px 20px 40px;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-tag {
+  margin: 0 auto 14px;
+  display: inline-flex;
+  background: rgba(30, 144, 255, 0.15);
+  color: #1e3a8a;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+}
+
+.hero h1 {
+  margin: 20px 0 16px;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.05;
+}
+
+.hero-description {
+  color: #475569;
+  max-width: 620px;
+  margin: 0 auto 24px;
+  font-size: 1rem;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #1e90ff;
+  color: white;
+  padding: 12px 24px;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  padding: 12px 24px;
+}
+
+.search-panel {
+  max-width: 1100px;
+  margin: -30px auto 40px;
+  padding: 24px;
+  background: white;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+}
+
+.search-top {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 10px 18px;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #1e90ff;
+  color: white;
+  border-color: transparent;
+}
+
+.search-fields {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+.search-fields input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+.btn-search {
+  background: #0f172a;
+  color: white;
+  padding: 14px 0;
+  min-width: 120px;
+}
+
+.featured {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.section-title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.section-title h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+
+.section-title p {
+  margin: 0;
+  color: #64748b;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.property-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.property-image {
+  height: 180px;
+  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.property-body {
+  padding: 18px 20px 24px;
+}
+
+.property-body h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.property-body p {
+  margin: 4px 0;
+  color: #475569;
+}
+
+.price {
+  margin-top: 12px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+
+
+
+
